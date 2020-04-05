@@ -4,7 +4,7 @@ function RunCode( cCode ){
     o['source'] = cCode;
     console.log('PARAM', o);
 
-    $.post("https://modharbour.org/modharbour_samples/snippets/run.prg", o)
+    $.post("https://modharbour.org/modharbour_samples/run.prg", o)
     .done(function(data){console.log('DONE', data); $('#code').html(data);})
     .fail(function(data){console.log('ERROR', data);});
 }
