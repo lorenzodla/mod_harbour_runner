@@ -24,3 +24,8 @@ function RunPrg( file ){
     }
     rawFile.send(null);
 }
+
+function RunFromDiv(){
+   var myDiv = document.getElementById('code');
+   RunCode( myDiv.innerHTML );
+}
